@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <script type='text/javascript'>
+    function changeLink()
+    {
+      document.getElementById('dubing').innerHTML='Visit Zhihu';
+      document.getElementById('dubing').href='https://zhihu.com';
+      document.getElementById('dubing').target='_blank';
+    }
+  </script>
+  </head>
+
+  <body>
+    <h1><a id='dubing' href='https://baidu.com'>Visit Baidu</a></h1>
+    <input type='button' onclick='changeLink()' value='Change URL'>
+    <p>In this example, we change the url and text when click the button
+    'Change URL'. Also we change the target attribute. The default value of
+    target is '_self', which will open the tab in the same window. Setting
+    the target to '_blank', it will open a new tab in the browser.</p>
+  </body>
+</html>
