@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <style type='text/css'>
+    a:active {color: green;}
+  </style>
+  
+  <script type='text/javascript'>
+    function getFocus() {
+      document.getElementById('dubing').focus();
+    }
+    function loseFocus() {
+      document.getElementById('dubing').blur();
+    }
+  </script>
+  </head>
+
+  <body>
+    <h1><a id='dubing' href='https://baidu.com'>Visit Baidu</a></h1>
+    <br>
+    <input type='button' onclick='getFocus()' value='Get Focus'>
+    <input type='button' onclick='loseFocus()' value='Lose Focus'>
+  </body>
+</html>
