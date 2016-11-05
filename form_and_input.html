@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <form name="Form_1">
+    <form id="Form_1" name="Form_1">
       First Name: <input type="text" size=35>
     </form>
-    <form name="Form_2">
+    <form id="Form_2" name="Form_2">
       Middle Name: <input type="radio" size= 20>
     </form>
-    <form name="Form_3">
+    <form id="Form_3" name="Form_3">
       Last Name: <input type="submit" size=50>
     </form>
 
     <script type="text/javascript">
     document.write("This page includes: " +
         document.forms.length + " forms.");
+    document.write("<p>The third form is: " +
+        document.forms[2].name + "</p>");
+    document.write("<p>The second form is: " +
+        document.getElementById("Form_2").name + "</p>");
     </script>
   </body>
 </html>
