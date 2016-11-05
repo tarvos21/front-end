@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <script type='text/javascript'>
+    function createNewDoc() {
+      var newDoc = document.open('text/html', 'replace');
+      var txt = '<html><body>Fuck JavaScript!</body></html>';
+      newDoc.write(txt);
+      newDoc.close();
+    }
+  </script>
+  </head>
+
+  <body>
+    <input type='button' value='Click to open a new document'
+    onclick='createNewDoc()'>
+  </body>
+</html>
