@@ -1,3 +1,5 @@
+<script type="text/javascript" src="clien.js"></script>
+
 fucntion loadScript(url) {
     var script = document.createElement("script");
     script.type = "text/javascript";
